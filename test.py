@@ -9,6 +9,10 @@ sample.hmm()
 print(sample.dummy.dumdum())
 print(sample.subsample.test.test())
 
-from sample.subsample.test import test as xmp
 
-print(xmp())
+to_extension = "test"
+exec(open("extension.py").read())
+
+
+
+print(from_extension)
